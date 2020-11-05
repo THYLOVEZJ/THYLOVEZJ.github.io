@@ -16,7 +16,7 @@
 <meta property="og:description" content="1.插入排序算法思路:首先设置一个最小值索引，然后遍历数组，找到最小值并将其下表给最小值索引，然后交换，然后外层循环加一，继续进行判断。 源码如下: 1234567891011121314151617181920212223242526272829303132333435363738#include&lt;iostream&gt;using namespace std;void Selection">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-14T14:30:55.000Z">
-<meta property="article:modified_time" content="2020-03-17T16:20:34.264Z">
+<meta property="article:modified_time" content="2020-03-21T17:20:23.451Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -47,7 +47,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/img/personphoto.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">John Doe</a></h1>
@@ -105,7 +105,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/img/personphoto.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">John Doe</h1>
@@ -176,7 +176,7 @@
       
         <h4 id="1-插入排序算法"><a href="#1-插入排序算法" class="headerlink" title="1.插入排序算法"></a>1.插入排序算法</h4><p>思路:首先设置一个最小值索引，然后遍历数组，找到最小值并将其下表给最小值索引，然后交换，然后外层循环加一，继续进行判断。</p>
 <p>源码如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">void SelectionSort(int a[],int n)&#123;</span><br><span class="line"></span><br><span class="line">​	for(int i&#x3D;0;i&lt;n;i++)&#123;</span><br><span class="line"></span><br><span class="line">​	int IndexMin&#x3D;i;</span><br><span class="line"></span><br><span class="line">​	for(j&#x3D;i+1;j&lt;n;j++)&#123;</span><br><span class="line"></span><br><span class="line">​	if(a[j]&lt;a[IndexMin])&#123;</span><br><span class="line"></span><br><span class="line">​	IndexMin&#x3D;j;</span><br><span class="line"></span><br><span class="line">​	swap(a[i],a[IndexMin]);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line"></span><br><span class="line">​	int a[10]&#x3D;&#123;2,1,3,4,5,6,9,8,7,10&#125;</span><br><span class="line"></span><br><span class="line">​	SelectionSort(a,10);</span><br><span class="line"></span><br><span class="line">​	for(int i&#x3D;0;i&lt;10;i++)&#123;</span><br><span class="line"></span><br><span class="line">​	cout&lt;&lt;a[i]&lt;&lt;&quot; &quot;;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SelectionSort</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> IndexMin=i;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;n;j++)&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span>(a[j]&lt;a[IndexMin])&#123;</span><br><span class="line"></span><br><span class="line">	IndexMin=j;</span><br><span class="line"></span><br><span class="line">	swap(a[i],a[IndexMin]);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">10</span>]=&#123;<span class="number">2</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">10</span>&#125;</span><br><span class="line"></span><br><span class="line">	SelectionSort(a,<span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -270,6 +270,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2020/03/18/leetcode/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          leetcode代码
+        
+      </div>
+    </a>
   
   
     <a href="/2020/03/14/linux%20basic%20operation/" id="article-nav-older" class="article-nav-link-wrap">

@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/3 | Hexo</title>
+  <title>c++ | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/03/index.html">
+  <meta name="description" content="[TOC] 1.c++工具1.使用工具 vs2015，之前用的是2010，然而发现vector里有的函数执行不了，于是换了ide 2.安装 2.一些基本的运算符   符号 指令含义    + 加   - 减   * ×   &#x2F; 除   ++ 自加1   – 自减1   % 取余   3.标识符与关键字标识符含义:用户用来标识变量，函数，类，模块或者自定义项目的名字（规定：标识符由大写字母或者小写字">
+<meta property="og:type" content="article">
+<meta property="og:title" content="c++">
+<meta property="og:url" content="http://yoursite.com/2020/03/22/c/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 1.c++工具1.使用工具 vs2015，之前用的是2010，然而发现vector里有的函数执行不了，于是换了ide 2.安装 2.一些基本的运算符   符号 指令含义    + 加   - 减   * ×   &#x2F; 除   ++ 自加1   – 自减1   % 取余   3.标识符与关键字标识符含义:用户用来标识变量，函数，类，模块或者自定义项目的名字（规定：标识符由大写字母或者小写字">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-21T16:16:38.000Z">
+<meta property="article:modified_time" content="2020-03-23T13:57:38.309Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,211 +154,319 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-c" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      c++
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/22/c/" class="archive-article-date">
+
+        
+        <a href="/2020/03/22/c/" class="archive-article-date">
   	<time datetime="2020-03-21T16:16:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/22/c/">c++</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-c-工具"><a href="#1-c-工具" class="headerlink" title="1.c++工具"></a>1.c++工具</h2><p>1.使用工具</p>
+<p>vs2015，之前用的是2010，然而发现vector里有的函数执行不了，于是换了ide</p>
+<p>2.安装</p>
+<h2 id="2-一些基本的运算符"><a href="#2-一些基本的运算符" class="headerlink" title="2.一些基本的运算符"></a>2.一些基本的运算符</h2><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>指令含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>加</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减</td>
+</tr>
+<tr>
+<td>*</td>
+<td>×</td>
+</tr>
+<tr>
+<td>/</td>
+<td>除</td>
+</tr>
+<tr>
+<td>++</td>
+<td>自加1</td>
+</tr>
+<tr>
+<td>–</td>
+<td>自减1</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取余</td>
+</tr>
+</tbody></table>
+<h2 id="3-标识符与关键字"><a href="#3-标识符与关键字" class="headerlink" title="3.标识符与关键字"></a>3.标识符与关键字</h2><p>标识符含义:用户用来标识变量，函数，类，模块或者自定义项目的名字（规定：标识符由大写字母或者小写字母以及下划线开头，后面跟数字，字母或者下划线）（c++是区分大小写的）</p>
+<p>关键字：一些具有特殊含义的字、</p>
+<h2 id="4-变量与常量定义"><a href="#4-变量与常量定义" class="headerlink" title="4. 变量与常量定义"></a>4. 变量与常量定义</h2><p>首先是类型说明符，后面是一个或者多个组成的列表，中间由逗号分隔</p>
+<p>int a=1,b=2;</p>
+<p>常量定义有两种方式</p>
+<p>1.#define pi 3.1415926；</p>
+<p>2.const double pi 3.1415926；</p>
+<h2 id="5-进制数表示方法"><a href="#5-进制数表示方法" class="headerlink" title="5.进制数表示方法"></a>5.进制数表示方法</h2><p>0x表示16进制数</p>
+<p>0表示八进制</p>
+<p>不加则默认是十进制数</p>
+<h2 id="6-逻辑运算符"><a href="#6-逻辑运算符" class="headerlink" title="6.逻辑运算符"></a>6.逻辑运算符</h2><p>与&amp;&amp;</p>
+<p>或||</p>
+<p>非！</p>
+<p>assert：断言，表达式里的值必须为真，否则程序报错</p>
+<h2 id="7-两种注释方法"><a href="#7-两种注释方法" class="headerlink" title="7.两种注释方法"></a>7.两种注释方法</h2><p>单行注释：//</p>
+<p>多行注释：</p>
+<p>/*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*/</p>
+<h2 id="8-序列型容器数组"><a href="#8-序列型容器数组" class="headerlink" title="8.序列型容器数组"></a>8.序列型容器数组</h2><p>代表内存里一组同连续类型的存储区</p>
+<p>可以把多个存储区合成一个整体</p>
+<p>数组元素的增删改查</p>
+<p>1.查找值为3的元素下标</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[<span class="number">4</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> len=<span class="keyword">sizeof</span>(a)/<span class="keyword">sizeof</span>(a[<span class="number">0</span>]);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(a[i]==len)</span><br><span class="line">        <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<p>vector是面向对象的动态数组</p>
+<p>使用普通定义的数组，无法实现数组的动态扩容</p>
+<p>例如使用vector可以实现vector的动态扩容</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;//导入vector库</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;<span class="comment">//定义了一个vector容器vec</span></span><br><span class="line">vec.push_back(<span class="number">5</span>);<span class="comment">//把5放到了数组的末端</span></span><br></pre></td></tr></table></figure>
 
+<p>vector的遍历操作:</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>//markdown竟然不能只定义一行也是很迷</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;vec.<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;vec[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="9-二维数组"><a href="#9-二维数组" class="headerlink" title="9.二维数组"></a>9.二维数组</h2><p>定义：包含两个维度的数组</p>
+<p>二维数组的遍历：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[<span class="number">2</span>][<span class="number">4</span>]=&#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;,&#123;<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>&#125;&#125;;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> row=<span class="number">0</span>;row&lt;<span class="number">4</span>;row++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> col=<span class="number">0</span>;col&lt;<span class="number">4</span>,col++)&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;a[row][col]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+</tbody></table>
+<h2 id="10-字符串数组与指针的定义"><a href="#10-字符串数组与指针的定义" class="headerlink" title="10.字符串数组与指针的定义"></a>10.字符串数组与指针的定义</h2><p>字符串的三种定义方法:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> StrHelloWorld[<span class="number">11</span>]=&#123;helloworld&#125;;</span><br><span class="line"><span class="keyword">char</span> StrHelloWorld[]=&#123;helloworld&#125;;</span><br><span class="line"><span class="keyword">char</span>* StrHelloWorld=<span class="string">"helloworld"</span>;</span><br></pre></td></tr></table></figure>
+
+<p>char[]与char*的定义不同之处把握两点:</p>
+<p>1.地址和地址存储的信息</p>
+<p>2.可变与不可变(在数组里存储的信息是可变的，而地址是不可变的，而指针地址是可变的，而存储值要依据存储位置视情况而定)</p>
+<h2 id="11-字符串常用指令"><a href="#11-字符串常用指令" class="headerlink" title="11.字符串常用指令"></a>11.字符串常用指令</h2><table>
+<thead>
+<tr>
+<th>指令</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>strlen()</td>
+<td>测定字符串长度</td>
+</tr>
+<tr>
+<td>strcmp(s1,s2)</td>
+<td>比较字符串，如果相同返回0，如果s1&lt;s2返回-1否则返回1</td>
+</tr>
+<tr>
+<td>strcpy(s1,s2)</td>
+<td>复制s2字符串到s1字符串</td>
+</tr>
+<tr>
+<td>strncpy(s1,s2,n)</td>
+<td>把字符串2前n个值赋值给s1</td>
+</tr>
+<tr>
+<td>strchr(s1,ch)</td>
+<td>查找s1中ch第一次出现的位置</td>
+</tr>
+<tr>
+<td>strstr(s1,s2)</td>
+<td>在s1字符串中查找s2字符串第一次出现的位置</td>
+</tr>
+</tbody></table>
+<p>这里需要注意这几个常用api并不十分安全，可能会引发缓冲区溢出的错误。所以应该换成strcat_s这种会较为安全。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/22/c/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/18/leetcode/" class="archive-article-date">
-  	<time datetime="2020-03-18T15:34:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-18</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/04/02/javalearn/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          javalearn
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/03/18/leetcode/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">leetcode代码</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/18/leetcode/">leetcode代码</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/14/selectionsort/" class="archive-article-date">
-  	<time datetime="2020-03-14T14:30:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/14/selectionsort/">datastructure</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/14/linux%20basic%20operation/" class="archive-article-date">
-  	<time datetime="2020-03-14T14:03:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/14/linux%20basic%20operation/">linux基本操作与指令</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/13/markdown/" class="archive-article-date">
-  	<time datetime="2020-03-13T14:18:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/13/markdown/">markdown的几种使用方法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/13/blog/" class="archive-article-date">
-  	<time datetime="2020-03-13T09:15:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/13/blog/">第一篇博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/11/helloworld/" class="archive-article-date">
-  	<time datetime="2020-03-11T15:20:00.321Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/11/helloworld/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -377,8 +489,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

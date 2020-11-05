@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/3 | Hexo</title>
+  <title>vhdl | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/03/index.html">
+  <meta name="description" content="[TOC] not,and,or GATENOT GATE VHDL: Y &#x3D; not X  AND GATE VHDL: Z &#x3D;X and Y  OR GATE VHDL: Z &#x3D;X or Y  NAND GATE VHDL: Z &#x3D; X nand Y  NOR GATE  VHDL:Z&#x3D;X nor Y  XOR GATE VHDL:Z&#x3D; X XOR Y  Multiple-Input AND">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vhdl">
+<meta property="og:url" content="http://yoursite.com/2020/04/15/vhdl/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] not,and,or GATENOT GATE VHDL: Y &#x3D; not X  AND GATE VHDL: Z &#x3D;X and Y  OR GATE VHDL: Z &#x3D;X or Y  NAND GATE VHDL: Z &#x3D; X nand Y  NOR GATE  VHDL:Z&#x3D;X nor Y  XOR GATE VHDL:Z&#x3D; X XOR Y  Multiple-Input AND">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-15T13:49:39.000Z">
+<meta property="article:modified_time" content="2020-04-19T15:05:21.313Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,211 +154,274 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-vhdl" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      vhdl
+    </h1>
+  
+
+        
+        <a href="/2020/04/15/vhdl/" class="archive-article-date">
+  	<time datetime="2020-04-15T13:49:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-15</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="not-and-or-GATE"><a href="#not-and-or-GATE" class="headerlink" title="not,and,or GATE"></a>not,and,or GATE</h1><h2 id="NOT-GATE"><a href="#NOT-GATE" class="headerlink" title="NOT GATE"></a>NOT GATE</h2><blockquote>
+<p>VHDL: Y = not X</p>
+</blockquote>
+<h2 id="AND-GATE"><a href="#AND-GATE" class="headerlink" title="AND GATE"></a>AND GATE</h2><blockquote>
+<p>VHDL: Z =X and Y</p>
+</blockquote>
+<h2 id="OR-GATE"><a href="#OR-GATE" class="headerlink" title="OR GATE"></a>OR GATE</h2><blockquote>
+<p>VHDL: Z =X or Y</p>
+</blockquote>
+<h2 id="NAND-GATE"><a href="#NAND-GATE" class="headerlink" title="NAND GATE"></a>NAND GATE</h2><blockquote>
+<p>VHDL: Z = X nand Y</p>
+</blockquote>
+<h2 id="NOR-GATE"><a href="#NOR-GATE" class="headerlink" title="NOR GATE"></a>NOR GATE</h2><blockquote>
+<p> VHDL:Z=X nor Y</p>
+</blockquote>
+<h2 id="XOR-GATE"><a href="#XOR-GATE" class="headerlink" title="XOR GATE"></a>XOR GATE</h2><blockquote>
+<p>VHDL:Z= X XOR Y</p>
+</blockquote>
+<h1 id="Multiple-Input-AND-Gate"><a href="#Multiple-Input-AND-Gate" class="headerlink" title="Multiple-Input AND Gate"></a>Multiple-Input AND Gate</h1><p>多门与</p>
+<blockquote>
+<p>VHDL:Z &lt;=x(1) and x(2) and… and x(n);</p>
+</blockquote>
+<p>多门或</p>
+<blockquote>
+<p>VHDL:Z &lt;=x(1) or x(2) or … or x(n);</p>
+</blockquote>
+<p>多门异或</p>
+<blockquote>
+<p>z&lt;= x(1) xor x(2) xor … xor x(n);</p>
+</blockquote>
+<h1 id="VHDL程序架构"><a href="#VHDL程序架构" class="headerlink" title="VHDL程序架构"></a>VHDL程序架构</h1><blockquote>
+<p>VHDL主要由两部分构成:entity 和Architecture</p>
+<p>entity</p>
+</blockquote>
+<figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--Example 1:2-input gates</span></span><br><span class="line"><span class="keyword">library</span> IEEE//调用系统位于该库中的文件IEEE</span><br><span class="line"><span class="keyword">use</span> IEEE.STD_LOGIC_1164.<span class="keyword">all</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">entity</span> gates2 <span class="keyword">is</span></span><br><span class="line">        <span class="keyword">port</span>(</span><br><span class="line">            a:<span class="keyword">in</span> <span class="built_in">STD_LOGIC</span>;//mode <span class="keyword">in</span> </span><br><span class="line">            b:<span class="keyword">in</span> <span class="built_in">STD_LOGIC</span>;//mode <span class="keyword">in</span></span><br><span class="line">            Z:<span class="keyword">out</span> <span class="built_in">STD_LOGIC_VECTOR</span>(<span class="number">5</span> <span class="keyword">downto</span> <span class="number">0</span>)</span><br><span class="line">        );</span><br><span class="line"><span class="keyword">end</span> gates2;</span><br></pre></td></tr></table></figure>
+
+<p>输入输出可以使用的所有值</p>
+<figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span> IEEE</span><br><span class="line"><span class="keyword">use</span> IEEE.std_logic_1164.<span class="keyword">all</span></span><br><span class="line">    <span class="keyword">type</span> <span class="built_in">std_ulogic</span> <span class="keyword">is</span>(	<span class="string">'U'</span><span class="comment">--Uninitialize</span></span><br><span class="line">                       	<span class="string">'X'</span><span class="comment">--Forcing unknown</span></span><br><span class="line">        				<span class="string">'0'</span><span class="comment">--Forcing zero</span></span><br><span class="line">                        <span class="string">'1'</span><span class="comment">--Forcing one</span></span><br><span class="line">                        <span class="string">'Z'</span><span class="comment">--High inpedance</span></span><br><span class="line">                       	<span class="string">'W'</span><span class="comment">--Weak unkown</span></span><br><span class="line">                       	<span class="string">'L'</span><span class="comment">--Weak zero</span></span><br><span class="line">                        <span class="string">'H'</span><span class="comment">--Weak one</span></span><br><span class="line">                        <span class="string">'-'</span><span class="comment">--not care</span></span><br><span class="line">    				  )</span><br></pre></td></tr></table></figure>
+
+<p>Architecture</p>
+<figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">architecture</span> gates2 <span class="keyword">of</span> gates//<span class="keyword">entity</span> name <span class="keyword">is</span> <span class="keyword">begin</span></span><br><span class="line">	z(<span class="number">5</span>) &lt;= a <span class="keyword">and</span> b;</span><br><span class="line">	z(<span class="number">4</span>) &lt;= a <span class="keyword">nand</span> b;</span><br><span class="line">	z(<span class="number">3</span>) &lt;= a <span class="keyword">or</span> b;</span><br><span class="line">	z(<span class="number">2</span>) &lt;= a <span class="keyword">nor</span> b;</span><br><span class="line">	z(<span class="number">1</span>) &lt;= a <span class="keyword">xor</span> b;</span><br><span class="line">	z(<span class="number">0</span>) &lt;= a <span class="keyword">xnor</span> b;</span><br><span class="line"><span class="keyword">end</span> gates2;</span><br></pre></td></tr></table></figure>
+
+<h2 id="VHDL的数据对象"><a href="#VHDL的数据对象" class="headerlink" title="VHDL的数据对象"></a>VHDL的数据对象</h2><ol>
+<li>VHDL的数据对象主要有信号，变量，常量三种</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>信号</td>
+<td>signal 信号名: 信号类型[:=初始值]</td>
+<td>signal a:std_logic:=’0’;定义标准信号a,初始值为低电平</td>
+<td>signal  b:std_logic_vector(3 downto 0);</td>
+<td>signal q: integer range 0 to 10;</td>
+<td>信号&lt;=表达式</td>
+</tr>
+<tr>
+<td>变量</td>
+<td>variable 变量名:数据类型[:初始值]</td>
+<td>variable a,b:bit;定义a,b是位型变量</td>
+<td>variable y: interger range 0 to 3;定义y是整形变量，变化范围是0-3</td>
+<td>variable c:std_logic_vector(3down to 0)</td>
+<td>变量名&lt;=表达式</td>
+</tr>
+<tr>
+<td>常量</td>
+<td>constant 常量名:类型名[:=取值]</td>
+<td>constant count_model : integer :=8;定义count_model 是整形常量,值为8</td>
+<td>constant delay : time :=25ns;定义delay是时间型常量,延时时间为25ns</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bit</td>
+<td>位，有两种取值0，1</td>
+</tr>
+<tr>
+<td>bit_vector</td>
+<td>位矢量型,是多个位型数据的组合,如’1001’使用时请注明位宽</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>整形数据</td>
+</tr>
+<tr>
+<td>std_logic</td>
+<td>有0,1,X,Z等9种取值</td>
+</tr>
+<tr>
+<td>std_logic_vector</td>
+<td>标准逻辑矢量型,是多个std_logic型数据的组合</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/22/c/" class="archive-article-date">
-  	<time datetime="2020-03-21T16:16:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/22/c/">c++</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/15/vhdl/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/18/leetcode/" class="archive-article-date">
-  	<time datetime="2020-03-18T15:34:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-18</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/10/24/python-basic/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          python-basic
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/15/datastructure/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">datastructure</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/18/leetcode/">leetcode代码</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/14/selectionsort/" class="archive-article-date">
-  	<time datetime="2020-03-14T14:30:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/14/selectionsort/">datastructure</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/14/linux%20basic%20operation/" class="archive-article-date">
-  	<time datetime="2020-03-14T14:03:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/14/linux%20basic%20operation/">linux基本操作与指令</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/13/markdown/" class="archive-article-date">
-  	<time datetime="2020-03-13T14:18:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/13/markdown/">markdown的几种使用方法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/13/blog/" class="archive-article-date">
-  	<time datetime="2020-03-13T09:15:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/13/blog/">第一篇博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/11/helloworld/" class="archive-article-date">
-  	<time datetime="2020-03-11T15:20:00.321Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/11/helloworld/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -377,8 +444,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

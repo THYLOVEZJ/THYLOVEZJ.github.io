@@ -43,7 +43,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/img/personphoto.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">John Doe</a></h1>
@@ -101,7 +101,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/img/personphoto.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">John Doe</h1>
@@ -152,6 +152,925 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-python-basic" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/24/python-basic/">python-basic</a>
+    </h1>
+  
+
+        
+        <a href="/2020/10/24/python-basic/" class="archive-article-date">
+  	<time datetime="2020-10-24T05:04:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="制表符的使用"><a href="#制表符的使用" class="headerlink" title="制表符的使用"></a>制表符的使用</h3><p>format</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name=input(<span class="string">"请输入姓名"</span>)</span><br><span class="line">print(<span class="string">"&#123;&#125;同学，学好python，前途无量"</span>.format(name))</span><br><span class="line">print(<span class="string">"&#123;&#125;大侠，学好python，前途无量"</span>.format(name[<span class="number">0</span>]))</span><br><span class="line">print(<span class="string">"&#123;&#125;哥哥，学好python，前途无量"</span>.format(name[<span class="number">1</span>:]))</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/10/24/python-basic/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vhdl" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/15/vhdl/">vhdl</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/15/vhdl/" class="archive-article-date">
+  	<time datetime="2020-04-15T13:49:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="not-and-or-GATE"><a href="#not-and-or-GATE" class="headerlink" title="not,and,or GATE"></a>not,and,or GATE</h1><h2 id="NOT-GATE"><a href="#NOT-GATE" class="headerlink" title="NOT GATE"></a>NOT GATE</h2><blockquote>
+<p>VHDL: Y = not X</p>
+</blockquote>
+<h2 id="AND-GATE"><a href="#AND-GATE" class="headerlink" title="AND GATE"></a>AND GATE</h2><blockquote>
+<p>VHDL: Z =X and Y</p>
+</blockquote>
+<h2 id="OR-GATE"><a href="#OR-GATE" class="headerlink" title="OR GATE"></a>OR GATE</h2><blockquote>
+<p>VHDL: Z =X or Y</p>
+</blockquote>
+<h2 id="NAND-GATE"><a href="#NAND-GATE" class="headerlink" title="NAND GATE"></a>NAND GATE</h2><blockquote>
+<p>VHDL: Z = X nand Y</p>
+</blockquote>
+<h2 id="NOR-GATE"><a href="#NOR-GATE" class="headerlink" title="NOR GATE"></a>NOR GATE</h2><blockquote>
+<p> VHDL:Z=X nor Y</p>
+</blockquote>
+<h2 id="XOR-GATE"><a href="#XOR-GATE" class="headerlink" title="XOR GATE"></a>XOR GATE</h2><blockquote>
+<p>VHDL:Z= X XOR Y</p>
+</blockquote>
+<h1 id="Multiple-Input-AND-Gate"><a href="#Multiple-Input-AND-Gate" class="headerlink" title="Multiple-Input AND Gate"></a>Multiple-Input AND Gate</h1><p>多门与</p>
+<blockquote>
+<p>VHDL:Z &lt;=x(1) and x(2) and… and x(n);</p>
+</blockquote>
+<p>多门或</p>
+<blockquote>
+<p>VHDL:Z &lt;=x(1) or x(2) or … or x(n);</p>
+</blockquote>
+<p>多门异或</p>
+<blockquote>
+<p>z&lt;= x(1) xor x(2) xor … xor x(n);</p>
+</blockquote>
+<h1 id="VHDL程序架构"><a href="#VHDL程序架构" class="headerlink" title="VHDL程序架构"></a>VHDL程序架构</h1><blockquote>
+<p>VHDL主要由两部分构成:entity 和Architecture</p>
+<p>entity</p>
+</blockquote>
+<figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--Example 1:2-input gates</span></span><br><span class="line"><span class="keyword">library</span> IEEE//调用系统位于该库中的文件IEEE</span><br><span class="line"><span class="keyword">use</span> IEEE.STD_LOGIC_1164.<span class="keyword">all</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">entity</span> gates2 <span class="keyword">is</span></span><br><span class="line">        <span class="keyword">port</span>(</span><br><span class="line">            a:<span class="keyword">in</span> <span class="built_in">STD_LOGIC</span>;//mode <span class="keyword">in</span> </span><br><span class="line">            b:<span class="keyword">in</span> <span class="built_in">STD_LOGIC</span>;//mode <span class="keyword">in</span></span><br><span class="line">            Z:<span class="keyword">out</span> <span class="built_in">STD_LOGIC_VECTOR</span>(<span class="number">5</span> <span class="keyword">downto</span> <span class="number">0</span>)</span><br><span class="line">        );</span><br><span class="line"><span class="keyword">end</span> gates2;</span><br></pre></td></tr></table></figure>
+
+<p>输入输出可以使用的所有值</p>
+<figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span> IEEE</span><br><span class="line"><span class="keyword">use</span> IEEE.std_logic_1164.<span class="keyword">all</span></span><br><span class="line">    <span class="keyword">type</span> <span class="built_in">std_ulogic</span> <span class="keyword">is</span>(	<span class="string">'U'</span><span class="comment">--Uninitialize</span></span><br><span class="line">                       	<span class="string">'X'</span><span class="comment">--Forcing unknown</span></span><br><span class="line">        				<span class="string">'0'</span><span class="comment">--Forcing zero</span></span><br><span class="line">                        <span class="string">'1'</span><span class="comment">--Forcing one</span></span><br><span class="line">                        <span class="string">'Z'</span><span class="comment">--High inpedance</span></span><br><span class="line">                       	<span class="string">'W'</span><span class="comment">--Weak unkown</span></span><br><span class="line">                       	<span class="string">'L'</span><span class="comment">--Weak zero</span></span><br><span class="line">                        <span class="string">'H'</span><span class="comment">--Weak one</span></span><br><span class="line">                        <span class="string">'-'</span><span class="comment">--not care</span></span><br><span class="line">    				  )</span><br></pre></td></tr></table></figure>
+
+<p>Architecture</p>
+<figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">architecture</span> gates2 <span class="keyword">of</span> gates//<span class="keyword">entity</span> name <span class="keyword">is</span> <span class="keyword">begin</span></span><br><span class="line">	z(<span class="number">5</span>) &lt;= a <span class="keyword">and</span> b;</span><br><span class="line">	z(<span class="number">4</span>) &lt;= a <span class="keyword">nand</span> b;</span><br><span class="line">	z(<span class="number">3</span>) &lt;= a <span class="keyword">or</span> b;</span><br><span class="line">	z(<span class="number">2</span>) &lt;= a <span class="keyword">nor</span> b;</span><br><span class="line">	z(<span class="number">1</span>) &lt;= a <span class="keyword">xor</span> b;</span><br><span class="line">	z(<span class="number">0</span>) &lt;= a <span class="keyword">xnor</span> b;</span><br><span class="line"><span class="keyword">end</span> gates2;</span><br></pre></td></tr></table></figure>
+
+<h2 id="VHDL的数据对象"><a href="#VHDL的数据对象" class="headerlink" title="VHDL的数据对象"></a>VHDL的数据对象</h2><ol>
+<li>VHDL的数据对象主要有信号，变量，常量三种</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>信号</td>
+<td>signal 信号名: 信号类型[:=初始值]</td>
+<td>signal a:std_logic:=’0’;定义标准信号a,初始值为低电平</td>
+<td>signal  b:std_logic_vector(3 downto 0);</td>
+<td>signal q: integer range 0 to 10;</td>
+<td>信号&lt;=表达式</td>
+</tr>
+<tr>
+<td>变量</td>
+<td>variable 变量名:数据类型[:初始值]</td>
+<td>variable a,b:bit;定义a,b是位型变量</td>
+<td>variable y: interger range 0 to 3;定义y是整形变量，变化范围是0-3</td>
+<td>variable c:std_logic_vector(3down to 0)</td>
+<td>变量名&lt;=表达式</td>
+</tr>
+<tr>
+<td>常量</td>
+<td>constant 常量名:类型名[:=取值]</td>
+<td>constant count_model : integer :=8;定义count_model 是整形常量,值为8</td>
+<td>constant delay : time :=25ns;定义delay是时间型常量,延时时间为25ns</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bit</td>
+<td>位，有两种取值0，1</td>
+</tr>
+<tr>
+<td>bit_vector</td>
+<td>位矢量型,是多个位型数据的组合,如’1001’使用时请注明位宽</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>整形数据</td>
+</tr>
+<tr>
+<td>std_logic</td>
+<td>有0,1,X,Z等9种取值</td>
+</tr>
+<tr>
+<td>std_logic_vector</td>
+<td>标准逻辑矢量型,是多个std_logic型数据的组合</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/15/vhdl/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-datastructure" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/15/datastructure/">datastructure</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/15/datastructure/" class="archive-article-date">
+  	<time datetime="2020-04-15T06:00:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="数组概念"><a href="#数组概念" class="headerlink" title="数组概念"></a>数组概念</h2><h2 id="数组的定义方式和遍历"><a href="#数组的定义方式和遍历" class="headerlink" title="数组的定义方式和遍历"></a>数组的定义方式和遍历</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">    arr[i]=i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] scores=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">100</span>,<span class="number">70</span>,<span class="number">80</span>&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">	System.out.println(scores[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>增强型for循环输出数组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> score:scores)</span><br><span class="line">	System.out.print(score);</span><br></pre></td></tr></table></figure>
+
+<h2 id="java里数组的二次封装"><a href="#java里数组的二次封装" class="headerlink" title="java里数组的二次封装"></a>java里数组的二次封装</h2><p><em>数组最好应用于索引有语义的情况</em></p>
+<p><em>但并非所有有语义的索引都适用于数组</em></p>
+<p>所以我们必须制作自己的数组类class array可以实现增删改查</p>
+<p>添加一个新的array类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">array</span></span>&#123;</span><br><span class="line">	<span class="comment">//最好定义为私有的，不要让用户更改</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] data;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> size;</span><br><span class="line">	<span class="comment">//构造函数，传入数组的capacity构造array</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Array</span><span class="params">(<span class="keyword">int</span> capacity)</span></span>&#123;</span><br><span class="line">		data=<span class="keyword">new</span> <span class="keyword">int</span>[capacity];</span><br><span class="line">		size =<span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//无参数的构造函数，默认数组的容量为10</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Array</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">this</span>(capacity:<span class="number">10</span>);</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSize</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> size;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">getCapacity</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> data.length;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> size==<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="向数组中添加元素"><a href="#向数组中添加元素" class="headerlink" title="向数组中添加元素"></a>向数组中添加元素</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addLast</span><span class="params">(<span class="keyword">int</span> e)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(size==data.length)</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"AddList failed.Array is full"</span>);</span><br><span class="line">    data[size]=e;</span><br><span class="line">    size++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="向数组指定位置添加元素"><a href="#向数组指定位置添加元素" class="headerlink" title="向数组指定位置添加元素"></a>向数组指定位置添加元素</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> index,<span class="keyword">int</span> e)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(size==data.length)</span><br><span class="line">         <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"AddList failed.Array is full"</span>);</span><br><span class="line">    <span class="keyword">if</span>(index&lt;<span class="number">0</span>||index&gt;size)</span><br><span class="line">         <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"AddList failed.reqire index&gt;=0 and array is full"</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=size-<span class="number">1</span>;i&gt;=index;i--)</span><br><span class="line">        data[i+<span class="number">1</span>]=data[i];</span><br><span class="line">    data[index]=e;</span><br><span class="line">    size++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>向数组头插一个元素</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addLast</span><span class="params">(<span class="keyword">int</span> e)</span></span>&#123;</span><br><span class="line">	add(size,e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>向数组尾部插一个数据</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addFirst</span><span class="params">()</span></span>&#123;</span><br><span class="line">    add(<span class="number">0</span>,e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="向数组中查询和修改元素"><a href="#向数组中查询和修改元素" class="headerlink" title="向数组中查询和修改元素"></a>向数组中查询和修改元素</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</span><br><span class="line">  StringBuilder res=<span class="keyword">new</span> StringBuilder();</span><br><span class="line">    res.a</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/15/datastructure/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-http" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/15/http/">http</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/15/http/" class="archive-article-date">
+  	<time datetime="2020-04-15T05:03:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="Http"><a href="#Http" class="headerlink" title="Http"></a>Http</h1><h2 id="网络协议分层"><a href="#网络协议分层" class="headerlink" title="网络协议分层"></a>网络协议分层</h2><p>1.应用层-&gt;HTTP,FTP</p>
+<p>2.传输层-&gt;TCP,UDP</p>
+<p>3.网络层</p>
+<p>4.数据链路层</p>
+<p>5.物理层</p>
+<blockquote>
+<p>物理层：定义物理设备如何传输数据</p>
+<p>数据链路层：通讯实体间建立数据连接</p>
+<p>网络层：为数据节点之间创建逻辑链路</p>
+<p>传输层：向用户提供端到端服务 传输层向高层屏蔽了下层数据通信的细节</p>
+<p>应用层：为应用软件提供了很多服务 构建于TCP,IP协议之上</p>
+</blockquote>
+<h2 id="HTTP发展历史"><a href="#HTTP发展历史" class="headerlink" title="HTTP发展历史"></a>HTTP发展历史</h2><p>HTTP/0.9</p>
+<blockquote>
+<p> 只有一个命令GET</p>
+<p>没有HEADER等描述数据的信息</p>
+<p>服务端发送完毕，就关闭TCP连接</p>
+</blockquote>
+<p>HTTP1.0</p>
+<blockquote>
+<p>增加了很多命令</p>
+<p>增加status code和header</p>
+<p>多字符集，多部份发送</p>
+</blockquote>
+<p>HTTP1.1</p>
+<blockquote>
+<p>持久连接</p>
+<p>pipeline</p>
+<p>增加host和其他命令</p>
+</blockquote>
+<p>HTTP2</p>
+<blockquote>
+<p>数据以二进制进行传输</p>
+<p>同一连接里面发送多个请求不需要按照顺序来</p>
+<p>头信息压缩以及推送等提高效率的功能</p>
+</blockquote>
+<h2 id="HTTP的三次握手"><a href="#HTTP的三次握手" class="headerlink" title="HTTP的三次握手"></a>HTTP的三次握手</h2><p>1.SYN=1,Seq=x;客户端向服务端发送</p>
+<p>2.SYN=1,ACK=x+1,Seq=Y;服务端向客户端发送</p>
+<p>3.ACK=Y+1,Seq=z;客户端向服务端发送</p>
+<h2 id="URI-URN"><a href="#URI-URN" class="headerlink" title="URI,URN,"></a>URI,URN,</h2><blockquote>
+<p>URI(Uniform Resource Identifier):统一资源标识符</p>
+</blockquote>
+<blockquote>
+<p>URL(Uniform Resource Locator):统一资源定位器</p>
+</blockquote>
+<p><em>输入域名默认不加端口实际访问的就是80端口</em></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/15/http/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-html" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/02/html/">html</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/02/html/" class="archive-article-date">
+  	<time datetime="2020-04-02T14:33:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="1-html基本格式"><a href="#1-html基本格式" class="headerlink" title="1.html基本格式"></a>1.html基本格式</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="2-html的题目标签"><a href="#2-html的题目标签" class="headerlink" title="2.html的题目标签"></a>2.html的题目标签</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>一级标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h2</span>&gt;</span>二级标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h3</span>&gt;</span>三级标题<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h4</span>&gt;</span>四级标题<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h5</span>&gt;</span>五级标题<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h6</span>&gt;</span>六级标题<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="3-html的列表标签"><a href="#3-html的列表标签" class="headerlink" title="3.html的列表标签"></a>3.html的列表标签</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--无序标签--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>小明<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>小李<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>小张<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--有序标签--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>语文<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>数学<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>英语<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--定义列表--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>正数</span><br><span class="line">		<span class="tag">&lt;<span class="name">dd</span>&gt;</span>大于0的数<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>负数</span><br><span class="line">		<span class="tag">&lt;<span class="name">dd</span>&gt;</span>小于0的数<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="4-html的链接标签"><a href="#4-html的链接标签" class="headerlink" title="4.html的链接标签"></a>4.html的链接标签</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--text-decoration去掉文本装饰</span></span><br><span class="line"><span class="comment">	color设置颜色--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">		<span class="selector-class">.content</span>&#123;</span></span><br><span class="line">			height: 800px;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		a&#123;</span><br><span class="line">			text-decoration: none;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"><span class="css">		<span class="selector-tag">a</span><span class="selector-pseudo">:visited</span>&#123;</span></span><br><span class="line"><span class="css">			<span class="selector-tag">color</span>: <span class="selector-id">#333333</span>;</span></span><br><span class="line">		&#125;</span><br><span class="line">	<span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--在新建窗口中打开百度--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://baidu.com"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>百度一下,你就知道</span><br><span class="line">	<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--在自身页面中打开百度 这里注意是https://--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://baidu.com"</span> <span class="attr">target</span>=<span class="string">"_self"</span>&gt;</span>百度一下,你就知道</span><br><span class="line">	<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#titleThird"</span>&gt;</span>页面内锚点<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascript:;"</span>&gt;</span>随便你点能跳走算我输<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span>一堆内容<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h3</span> <span class="attr">id</span>=<span class="string">"titleThird"</span>&gt;</span>第三章<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/02/html/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-javalearn" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/02/javalearn/">javalearn</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/02/javalearn/" class="archive-article-date">
+  	<time datetime="2020-04-02T14:28:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="java一些使用的快捷键"><a href="#java一些使用的快捷键" class="headerlink" title="java一些使用的快捷键"></a>java一些使用的快捷键</h1><table>
+<thead>
+<tr>
+<th>指令</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ALT+/</td>
+<td>快速生成方法</td>
+</tr>
+<tr>
+<td>Ctrl+D</td>
+<td>快速删除当前行</td>
+</tr>
+<tr>
+<td>Ctrl+/</td>
+<td>快速添加注释</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+F</td>
+<td>快速调整代码格式</td>
+</tr>
+</tbody></table>
+<h1 id="利用java制造一个猜字游戏"><a href="#利用java制造一个猜字游戏" class="headerlink" title="利用java制造一个猜字游戏"></a>利用java制造一个猜字游戏</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.imooc.flow1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GuessDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 程序功能:猜测一个数属于0~10</span></span><br><span class="line">		<span class="keyword">int</span> n=(<span class="keyword">int</span>)(Math.random()*<span class="number">10</span>+<span class="number">1</span>);<span class="comment">//这里Math.random()产生的值属于0~1,且左闭右开.</span></span><br><span class="line">		<span class="keyword">int</span> Guess;<span class="comment">//这里需要特别注意,Guess的定义必须放到函数外,否则检测不到</span></span><br><span class="line">		<span class="keyword">do</span>&#123;</span><br><span class="line">			System.out.println(<span class="string">"请输入你猜测的数字"</span>);</span><br><span class="line">			Scanner sc=<span class="keyword">new</span> Scanner(System.in);<span class="comment">//System.in必须要输</span></span><br><span class="line">			Guess=sc.nextInt();</span><br><span class="line">			<span class="keyword">if</span>(Guess&lt;n)&#123;</span><br><span class="line">				System.out.println(<span class="string">"您猜测的值小了"</span>);</span><br><span class="line">			&#125;<span class="keyword">else</span> <span class="keyword">if</span>(Guess&gt;n)&#123;</span><br><span class="line">				System.out.println(<span class="string">"您猜测的值大了"</span>);</span><br><span class="line">				&#125;</span><br><span class="line">		&#125;<span class="keyword">while</span>(Guess!=n);</span><br><span class="line">		System.out.println(<span class="string">"您猜对了,Guess的值为"</span>+Guess);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.imooc.flow1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">forDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 用for循环求1到5的和</span></span><br><span class="line">		<span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> n;</span><br><span class="line">		<span class="keyword">for</span>(n=<span class="number">0</span>;n&lt;=<span class="number">5</span>;n++)&#123;</span><br><span class="line">			sum+=n;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.print(sum);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="循环程序练习"><a href="#循环程序练习" class="headerlink" title="循环程序练习"></a>循环程序练习</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//编写一个程序，求出200到300之间的数，且满足条件：它们三个数字之积为42，三个数字之和为12。</span></span><br><span class="line"><span class="keyword">package</span> com.imooc.flow1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">loopDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 编写一个程序，求出200到300之间的数，</span></span><br><span class="line">		<span class="comment">// 且满足条件：它们三个数字之积为42，三个数字之和为12。</span></span><br><span class="line">		<span class="comment">// 1、 循环遍历200到300之间的整数</span></span><br><span class="line">		<span class="comment">// 2、 分别取出个位、十位和百位上的数</span></span><br><span class="line">		<span class="comment">// 3、 求三个数字的和与积</span></span><br><span class="line">		<span class="comment">// 4、 判断三个数字的积是否为42，三个数字的和是否为12，如果满足条件则输出该数</span></span><br><span class="line">		<span class="comment">// 定义变量ge、shi、bai，用于存放个位、十位、百位上的数字</span></span><br><span class="line">		<span class="comment">// 使用for循环</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">200</span>; i &lt;= <span class="number">300</span>; i++) &#123;</span><br><span class="line">			<span class="comment">// 取出百位数</span></span><br><span class="line">			<span class="keyword">int</span> Hun = i / <span class="number">100</span>;</span><br><span class="line">			<span class="comment">// 取出十位数</span></span><br><span class="line">			<span class="keyword">int</span> Ten = i / <span class="number">10</span> % <span class="number">10</span>;</span><br><span class="line">			<span class="comment">// 取出个位数</span></span><br><span class="line">			<span class="keyword">int</span> One = i % <span class="number">10</span>;</span><br><span class="line">			<span class="comment">// 计算三个数字之积</span></span><br><span class="line">			<span class="keyword">int</span> Mux = Hun * Ten * One;</span><br><span class="line">			<span class="comment">// 计算三个数字之和</span></span><br><span class="line">			<span class="keyword">int</span> Sum = Hun + Ten + One;</span><br><span class="line">			<span class="comment">// 如果积等于42并且和为12，则将满足条件的数输出</span></span><br><span class="line">			<span class="keyword">if</span> (Mux == <span class="number">42</span> &amp; Sum == <span class="number">12</span>) &#123;</span><br><span class="line">				System.out.print(i+<span class="string">" "</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="数组声明"><a href="#数组声明" class="headerlink" title="数组声明"></a>数组声明</h1><p>1.语法格式: 数据类型[] 数组名;</p>
+<p>​                    数据类型    数组名[];</p>
+<h1 id="数组创建"><a href="#数组创建" class="headerlink" title="数组创建"></a>数组创建</h1><p>1.语法格式:先声明,再创建</p>
+<p>​                    数据类型[]    数组名;</p>
+<p>​                    数组名=new    数据类型[数组长度];</p>
+<p>2.语法格式:声明的同时创建数组</p>
+<p>​                    数据类型[]    数组名= new    数据类型[数组长度]；</p>
+<p>数组长度必须指定</p>
+<h1 id="数组的初始化"><a href="#数组的初始化" class="headerlink" title="数组的初始化"></a>数组的初始化</h1><p>1.定义:声明数组的同时给数组赋值,叫做数组的初始化。</p>
+<p>​            int[] arr={1,2,3,4,5,6,7,8,9,10};</p>
+<h1 id="数组元素的引用"><a href="#数组元素的引用" class="headerlink" title="数组元素的引用"></a>数组元素的引用</h1><p>1.语法格式:数组名[下标];</p>
+<h1 id="数组长度"><a href="#数组长度" class="headerlink" title="数组长度"></a>数组长度</h1><p>数组名.length</p>
+<h1 id="初始化一个数组给数组赋值并求和"><a href="#初始化一个数组给数组赋值并求和" class="headerlink" title="初始化一个数组给数组赋值并求和"></a>初始化一个数组给数组赋值并求和</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.imooc.flow1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">arrayDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 生成一个数组,赋值并求累加和</span></span><br><span class="line">		<span class="keyword">int</span>[] array=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>];</span><br><span class="line">		Scanner sc=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		<span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">			System.out.println(<span class="string">"请输入第"</span>+(i+<span class="number">1</span>)+<span class="string">"个数"</span>);</span><br><span class="line">			array[i]=sc.nextInt();</span><br><span class="line">			sum+=array[i];</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">"数组之和等于:"</span>+sum);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="求一个数组中能被3整除的元素并输出"><a href="#求一个数组中能被3整除的元素并输出" class="headerlink" title="求一个数组中能被3整除的元素并输出"></a>求一个数组中能被3整除的元素并输出</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.imooc.flow1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">arrayDemo1</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 求数组中能被3整除的元素并打印输出。</span></span><br><span class="line">		<span class="comment">//定义一个整型数组，并初始化</span></span><br><span class="line">		<span class="keyword">int</span>[] array=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">			Scanner sc=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">			System.out.println(<span class="string">"请输入数组的第"</span>+(i+<span class="number">1</span>)+<span class="string">"个值"</span>);</span><br><span class="line">			array[i]=sc.nextInt();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//循环遍历数组，找出能被3整除的元素并打印输出</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(array[i]%<span class="number">3</span>==<span class="number">0</span>)&#123;</span><br><span class="line">				System.out.println(<span class="string">"数组的第"</span>+(i+<span class="number">1</span>)+<span class="string">"个数能被3整除且值为"</span>+array[i]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="求数组中最大的元素并输出"><a href="#求数组中最大的元素并输出" class="headerlink" title="求数组中最大的元素并输出"></a>求数组中最大的元素并输出</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.imooc.flow1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">arrayDemo2</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 求一个数组中最大的元素并输出</span></span><br><span class="line">		<span class="keyword">int</span>[] array=&#123;<span class="number">22</span>,<span class="number">55</span>,<span class="number">77</span>,<span class="number">99</span>,<span class="number">44</span>&#125;;</span><br><span class="line">		<span class="keyword">int</span> maxArray=array[<span class="number">0</span>];</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;array.length;i++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(array[i]&gt;maxArray)&#123;</span><br><span class="line">				maxArray=array[i];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(maxArray);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="增强型for循环"><a href="#增强型for循环" class="headerlink" title="增强型for循环"></a>增强型for循环</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//增强型for循环输出数组</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> n:arr)&#123;</span><br><span class="line">    System.out.println(n+<span class="string">" "</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.imooc.flow1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">paoSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 冒泡排序</span></span><br><span class="line">		<span class="keyword">int</span>[] array = &#123; <span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">9</span> &#125;;</span><br><span class="line">		<span class="keyword">int</span> temp;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = array.length - <span class="number">1</span>; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span> (array[j] &gt; array[j + <span class="number">1</span>]) &#123;</span><br><span class="line">					temp = array[j + <span class="number">1</span>];</span><br><span class="line">					array[j + <span class="number">1</span>] = array[j];</span><br><span class="line">					array[j] = temp;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> n : array) &#123;</span><br><span class="line">			System.out.print(n + <span class="string">" "</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="定义一个字符数组并初始化，统计字符’a’或’A’出现的次数。"><a href="#定义一个字符数组并初始化，统计字符’a’或’A’出现的次数。" class="headerlink" title="定义一个字符数组并初始化，统计字符’a’或’A’出现的次数。"></a>定义一个字符数组并初始化，统计字符’a’或’A’出现的次数。</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.imooc.flow1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">charArrayDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 定义一个字符数组并初始化，统计字符’a’或’A’出现的次数。</span></span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="comment">// 定义一个字符数组ch并初始化</span></span><br><span class="line">		<span class="keyword">char</span>[] array = &#123; <span class="string">'a'</span>, <span class="string">'d'</span>, <span class="string">'A'</span>, <span class="string">'s'</span> &#125;;</span><br><span class="line">		<span class="comment">// 循环遍历数组，统计字符’a’或’A’出现的次数</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (array[i] == <span class="string">'a'</span> || array[i] == <span class="string">'A'</span>) &#123;</span><br><span class="line">				sum++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">// 打印输出统计数据</span></span><br><span class="line">		System.out.println(sum);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="二维数组的声明与创建"><a href="#二维数组的声明与创建" class="headerlink" title="二维数组的声明与创建"></a>二维数组的声明与创建</h1><p>1.数组类型[][] [] []    数组名;</p>
+<p>数组名=new int[行数] [列数];</p>
+<p>2.创建float类型数组时,只指定行数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">floatArray&#x3D;new float[3][];</span><br><span class="line">floatArray[0]&#x3D;new float[3];</span><br><span class="line">floatArray[0]&#x3D;new float[4];</span><br><span class="line">floatArray[0]&#x3D;new float[5];</span><br></pre></td></tr></table></figure>
+
+<h1 id="二维数组的初始化"><a href="#二维数组的初始化" class="headerlink" title="二维数组的初始化"></a>二维数组的初始化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int[][] num&#x3D;&#123;&#123;1,2,3&#125;,&#123;3,4,5&#125;,&#123;5,6,7&#125;&#125;;</span><br></pre></td></tr></table></figure>
+
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="方法的声明"><a href="#方法的声明" class="headerlink" title="方法的声明"></a>方法的声明</h2><p>语法格式:</p>
+<p>访问修饰符    返回类型    方法名(参数列表){</p>
+<p>​    方法体</p>
+<p>}</p>
+<h2 id="无参无返回值方法"><a href="#无参无返回值方法" class="headerlink" title="无参无返回值方法"></a>无参无返回值方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;打印一行星号</span><br><span class="line">public void Print()&#123;</span><br><span class="line">	System.out.print(&quot;***************&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="参数重载"><a href="#参数重载" class="headerlink" title="参数重载"></a>参数重载</h2><p>定义: 方法名相同,参数列表不同</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/02/javalearn/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-c" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/22/c/">c++</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/22/c/" class="archive-article-date">
+  	<time datetime="2020-03-21T16:16:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h2 id="1-c-工具"><a href="#1-c-工具" class="headerlink" title="1.c++工具"></a>1.c++工具</h2><p>1.使用工具</p>
+<p>vs2015，之前用的是2010，然而发现vector里有的函数执行不了，于是换了ide</p>
+<p>2.安装</p>
+<h2 id="2-一些基本的运算符"><a href="#2-一些基本的运算符" class="headerlink" title="2.一些基本的运算符"></a>2.一些基本的运算符</h2><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>指令含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>加</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减</td>
+</tr>
+<tr>
+<td>*</td>
+<td>×</td>
+</tr>
+<tr>
+<td>/</td>
+<td>除</td>
+</tr>
+<tr>
+<td>++</td>
+<td>自加1</td>
+</tr>
+<tr>
+<td>–</td>
+<td>自减1</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取余</td>
+</tr>
+</tbody></table>
+<h2 id="3-标识符与关键字"><a href="#3-标识符与关键字" class="headerlink" title="3.标识符与关键字"></a>3.标识符与关键字</h2><p>标识符含义:用户用来标识变量，函数，类，模块或者自定义项目的名字（规定：标识符由大写字母或者小写字母以及下划线开头，后面跟数字，字母或者下划线）（c++是区分大小写的）</p>
+<p>关键字：一些具有特殊含义的字、</p>
+<h2 id="4-变量与常量定义"><a href="#4-变量与常量定义" class="headerlink" title="4. 变量与常量定义"></a>4. 变量与常量定义</h2><p>首先是类型说明符，后面是一个或者多个组成的列表，中间由逗号分隔</p>
+<p>int a=1,b=2;</p>
+<p>常量定义有两种方式</p>
+<p>1.#define pi 3.1415926；</p>
+<p>2.const double pi 3.1415926；</p>
+<h2 id="5-进制数表示方法"><a href="#5-进制数表示方法" class="headerlink" title="5.进制数表示方法"></a>5.进制数表示方法</h2><p>0x表示16进制数</p>
+<p>0表示八进制</p>
+<p>不加则默认是十进制数</p>
+<h2 id="6-逻辑运算符"><a href="#6-逻辑运算符" class="headerlink" title="6.逻辑运算符"></a>6.逻辑运算符</h2><p>与&amp;&amp;</p>
+<p>或||</p>
+<p>非！</p>
+<p>assert：断言，表达式里的值必须为真，否则程序报错</p>
+<h2 id="7-两种注释方法"><a href="#7-两种注释方法" class="headerlink" title="7.两种注释方法"></a>7.两种注释方法</h2><p>单行注释：//</p>
+<p>多行注释：</p>
+<p>/*</p>
+<p>*</p>
+<p>*</p>
+<p>*</p>
+<p>*/</p>
+<h2 id="8-序列型容器数组"><a href="#8-序列型容器数组" class="headerlink" title="8.序列型容器数组"></a>8.序列型容器数组</h2><p>代表内存里一组同连续类型的存储区</p>
+<p>可以把多个存储区合成一个整体</p>
+<p>数组元素的增删改查</p>
+<p>1.查找值为3的元素下标</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[<span class="number">4</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> len=<span class="keyword">sizeof</span>(a)/<span class="keyword">sizeof</span>(a[<span class="number">0</span>]);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(a[i]==len)</span><br><span class="line">        <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>vector是面向对象的动态数组</p>
+<p>使用普通定义的数组，无法实现数组的动态扩容</p>
+<p>例如使用vector可以实现vector的动态扩容</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;//导入vector库</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;<span class="comment">//定义了一个vector容器vec</span></span><br><span class="line">vec.push_back(<span class="number">5</span>);<span class="comment">//把5放到了数组的末端</span></span><br></pre></td></tr></table></figure>
+
+<p>vector的遍历操作:</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>//markdown竟然不能只定义一行也是很迷</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;vec.<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;vec[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="9-二维数组"><a href="#9-二维数组" class="headerlink" title="9.二维数组"></a>9.二维数组</h2><p>定义：包含两个维度的数组</p>
+<p>二维数组的遍历：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[<span class="number">2</span>][<span class="number">4</span>]=&#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;,&#123;<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>&#125;&#125;;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> row=<span class="number">0</span>;row&lt;<span class="number">4</span>;row++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> col=<span class="number">0</span>;col&lt;<span class="number">4</span>,col++)&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;a[row][col]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+</tbody></table>
+<h2 id="10-字符串数组与指针的定义"><a href="#10-字符串数组与指针的定义" class="headerlink" title="10.字符串数组与指针的定义"></a>10.字符串数组与指针的定义</h2><p>字符串的三种定义方法:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> StrHelloWorld[<span class="number">11</span>]=&#123;helloworld&#125;;</span><br><span class="line"><span class="keyword">char</span> StrHelloWorld[]=&#123;helloworld&#125;;</span><br><span class="line"><span class="keyword">char</span>* StrHelloWorld=<span class="string">"helloworld"</span>;</span><br></pre></td></tr></table></figure>
+
+<p>char[]与char*的定义不同之处把握两点:</p>
+<p>1.地址和地址存储的信息</p>
+<p>2.可变与不可变(在数组里存储的信息是可变的，而地址是不可变的，而指针地址是可变的，而存储值要依据存储位置视情况而定)</p>
+<h2 id="11-字符串常用指令"><a href="#11-字符串常用指令" class="headerlink" title="11.字符串常用指令"></a>11.字符串常用指令</h2><table>
+<thead>
+<tr>
+<th>指令</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>strlen()</td>
+<td>测定字符串长度</td>
+</tr>
+<tr>
+<td>strcmp(s1,s2)</td>
+<td>比较字符串，如果相同返回0，如果s1&lt;s2返回-1否则返回1</td>
+</tr>
+<tr>
+<td>strcpy(s1,s2)</td>
+<td>复制s2字符串到s1字符串</td>
+</tr>
+<tr>
+<td>strncpy(s1,s2,n)</td>
+<td>把字符串2前n个值赋值给s1</td>
+</tr>
+<tr>
+<td>strchr(s1,ch)</td>
+<td>查找s1中ch第一次出现的位置</td>
+</tr>
+<tr>
+<td>strstr(s1,s2)</td>
+<td>在s1字符串中查找s2字符串第一次出现的位置</td>
+</tr>
+</tbody></table>
+<p>这里需要注意这几个常用api并不十分安全，可能会引发缓冲区溢出的错误。所以应该换成strcat_s这种会较为安全。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/22/c/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-leetcode" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/18/leetcode/">leetcode代码</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/18/leetcode/" class="archive-article-date">
+  	<time datetime="2020-03-18T15:34:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="leetcode刷题"><a href="#leetcode刷题" class="headerlink" title="leetcode刷题"></a>leetcode刷题</h1><h3 id="第一题-两数之和"><a href="#第一题-两数之和" class="headerlink" title="第一题.两数之和"></a>第一题.两数之和</h3><h5 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述:"></a>问题描述:</h5><p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
+<p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">给定 nums &#x3D; [2, 7, 11, 15], target &#x3D; 9</span><br><span class="line"></span><br><span class="line">因为 nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9</span><br><span class="line">所以返回 [0, 1]</span><br></pre></td></tr></table></figure>
+
+<h5 id=""><a href="#" class="headerlink" title=""></a></h5>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/18/leetcode/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-selectionsort" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -174,7 +1093,7 @@
       
         <h4 id="1-插入排序算法"><a href="#1-插入排序算法" class="headerlink" title="1.插入排序算法"></a>1.插入排序算法</h4><p>思路:首先设置一个最小值索引，然后遍历数组，找到最小值并将其下表给最小值索引，然后交换，然后外层循环加一，继续进行判断。</p>
 <p>源码如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">void SelectionSort(int a[],int n)&#123;</span><br><span class="line"></span><br><span class="line">​	for(int i&#x3D;0;i&lt;n;i++)&#123;</span><br><span class="line"></span><br><span class="line">​	int IndexMin&#x3D;i;</span><br><span class="line"></span><br><span class="line">​	for(j&#x3D;i+1;j&lt;n;j++)&#123;</span><br><span class="line"></span><br><span class="line">​	if(a[j]&lt;a[IndexMin])&#123;</span><br><span class="line"></span><br><span class="line">​	IndexMin&#x3D;j;</span><br><span class="line"></span><br><span class="line">​	swap(a[i],a[IndexMin]);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line"></span><br><span class="line">​	int a[10]&#x3D;&#123;2,1,3,4,5,6,9,8,7,10&#125;</span><br><span class="line"></span><br><span class="line">​	SelectionSort(a,10);</span><br><span class="line"></span><br><span class="line">​	for(int i&#x3D;0;i&lt;10;i++)&#123;</span><br><span class="line"></span><br><span class="line">​	cout&lt;&lt;a[i]&lt;&lt;&quot; &quot;;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SelectionSort</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> IndexMin=i;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;n;j++)&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span>(a[j]&lt;a[IndexMin])&#123;</span><br><span class="line"></span><br><span class="line">	IndexMin=j;</span><br><span class="line"></span><br><span class="line">	swap(a[i],a[IndexMin]);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">10</span>]=&#123;<span class="number">2</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">10</span>&#125;</span><br><span class="line"></span><br><span class="line">	SelectionSort(a,<span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="string">" "</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -330,235 +1249,10 @@
 
 
   
-    <article id="post-markdown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/13/markdown/">markdown的几种使用方法</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/13/markdown/" class="archive-article-date">
-  	<time datetime="2020-03-13T14:18:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><hr>
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><hr>
-<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><hr>
-<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><hr>
-<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><hr>
-<table>
-<thead>
-<tr>
-<th>显示格式</th>
-<th>markdown语法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>加粗</td>
-<td><strong>bold</strong></td>
-</tr>
-<tr>
-<td>斜体</td>
-<td><em>emphasize</em></td>
-</tr>
-<tr>
-<td>百度</td>
-<td><a href="www.baidu.com">百度</a></td>
-</tr>
-<tr>
-<td>引用</td>
-<td>用大于号加空格(但不晓得为啥在表格里引用不了)</td>
-</tr>
-</tbody></table>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/13/markdown/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/13/blog/">第一篇博客</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/13/blog/" class="archive-article-date">
-  	<time datetime="2020-03-13T09:15:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#第一篇博客</p>
-<pre><code>这是我的第一篇技术博客，此时是2020.3.13，这一段时间是我人生中最低谷的一段时间，刚刚经历了考研的失败，自信心损耗殆尽，回首往事，尽是破败。然不甘落败，乐观性格，使我还对未来生活充满向往。竭尽全力做事。记录自己的每一滴进步。</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/13/blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/11/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/11/hello-world/" class="archive-article-date">
-  	<time datetime="2020-03-11T15:20:00.321Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/11/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+    </nav>
   
 
 
